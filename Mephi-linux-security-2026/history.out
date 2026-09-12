@@ -1,0 +1,82 @@
+    1  ls students
+    2  /students
+    3  cat students
+    4  user info
+    5  id user1
+    6  getent group students 
+    7  ps eo pid,ruid,euid,user,com,args
+    8  ps eo pid,ruid,euid,user,comm,args
+    9  ps -eo pid,ruid,euid,user,comm,args
+   10  ps -eo pid,ruid,euid,user,comm,args | awk 'NR==1 || $3==0'
+   11  ps -eo pid,ruid,euid,user,comm,args | awk 'NR==1 || ($3==0 && $2!=0'
+   12  ps -eo pid,ruid,euid,user,comm,args | awk 'NR==1 || ($3==0 && $2!=0')
+   13  ps -eo pid,ruid,euid,user,comm,args | awk 'NR==1 || ($3==0 && $2!=0)'
+   14  passwd
+   15  cat ~/processes.out 
+   16  l
+   17  find / -type f -perm -4000 2>/dev/null
+   18  find / -type f -perm -4000 2>/dev/null > ~/suid-files.out
+   19  cat ~/suid-files.out 
+   20  ls -l /usr/bin/cat 
+   21  which cat
+   22  cp /usr/bin/cat /home/user1/cat
+   23  sudo cp /usr/bin/cat /home/user1/cat
+   24  ls -l /home/user1/cat
+   25  sudo ls -l /home/user1/cat
+   26  su - user1
+   27  sudo chmod u+s /home/user1/cat
+   28  ls -l /home/user1/cat
+   29  sudo chmod u+s /home/user1/cat
+   30  ls -l /home/user1/cat
+   31  sudo chmod u + s /home/user1/cat
+   32  sudo chmod u+s /home/user1/cat
+   33  ls -l /home/user1/cat
+   34  sudo -l
+   35  id
+   36  ls -ld /home/user1
+   37  lsattr /home/user1/cat
+   38  sudo ls -l /home/user1/cat
+   39  su - user1
+   40  ls -l /usr/bin/chowm
+   41  getcap /usr/bin/chowm
+   42  ls -l /usr/bin/chowm
+   43  find /usr -name chown -type f 2>/dev/null
+   44  ls -l /usr/bin/chowm
+   45  sudo ls -l /usr/bin/chown
+   46  sudo getcap /usr/bin/chowm
+   47  sudo sp /usr/bin/chowm /home/user1/chown
+   48  sudo cp /usr/bin/chowm /home/user1/chown
+   49  sudo ls -ld /home/user1
+   50  sudo ls -l /home/user1/cat
+   51  sudo ls -l /usr/bin/chown
+   52  sudo cp /usr/bin/chown /home/user1/chown
+   53  sudo ls -l /home/user1/chown
+   54  sudo touch /home/user1/testfile
+   55  sudo chown user1:students /home/user1/testfile
+   56  sudo ls -l /home/user1/testfile
+   57  su - user1
+   58  sudo setcap cap_chown+ep /home/user1/chown
+   59  sudo getcap /home/user1/chown
+   60  su - user1
+   61  command -v date
+   62  command -v timedatectl
+   63  sudo visudo -f /etc/sedors.d/user1-time
+   64  sudo visudo -f /etc/sudoers.d/user1-time
+   65  sudo visudo -cf /etc/sudoers.d/user1-time
+   66  su - user1
+   67  sudo visudo -f /etc/sudoers.d/user1-time
+   68  sudo visudo -cf /etc/sudoers.d/user1-time
+   69  su - user1
+   70  sudo visudo -f /etc/sudoers.d/user1-time
+   71  sudo visudo -cf /etc/sudoers.d/user1-time
+   72  su - user1
+   73  ls -l /bin/timedatectl /usr/bin/timedatectl
+   74  sudo visudo -f /etc/sudoers.d/user1-time
+   75  sudo visudo -cf /etc/sudoers.d/user1-time
+   76  sudo visudo -f /etc/sudoers.d/user1-time
+   77  sudo visudo -cf /etc/sudoers.d/user1-time
+   78  sudo cat -A /etc/sudoers.d/user1-time
+   79  sudo visudo -f /etc/sudoers.d/user1-time
+   80  sudo visudo -cf /etc/sudoers.d/user1-time
+   81  su - user1
+   82  history > ~/history.out
